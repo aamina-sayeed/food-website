@@ -1,0 +1,73 @@
+/*Grid Formation*/
+.menu-container{
+    
+    height:100%;
+    width:100%;
+    display:grid;
+    margin:auto;
+    grid-template-rows:50px 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+}
+  
+
+
+.item{
+    
+    color:white;
+    text-align: center;
+    
+}
+/* Template formation*/
+
+.item-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width:100%;
+    background:none;
+    color:white;
+    text-align: center;
+}
+
+.item-2{
+    grid-column-start:1;
+    grid-column-end: 3;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/ivan-torres-MQUqbmszGGM-unsplash.jpg) no-repeat center center/cover;
+}
+
+.item-2 ul,.item-5 ul{
+  list-style: none;
+  font-size: 1.3rem;
+  font-family: 'Dosis', sans-serif;
+  padding: 20px;
+  text-align:center;
+  line-height:50px;
+  
+  
+}
+
+.item-3{
+   
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/fidel-fernando-DKWZrV0Ty14-unsplash.jpg) no-repeat center center/cover;
+    text-align: center;
+    
+}
+
+.item-3 h1,.item-4 h1{
+    transform: translateY(90px);
+}
+
+.item-4{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/kai-pilger-tL92LY152Sk-unsplash.jpg);
+    grid-column-start:1;
+    grid-column-end: 2;
+}
+
+.item-5{
+    grid-column-start:2;
+    grid-column-end: 4;
+   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/aydin-ghadakchi-lamor-xzI8Xt8diMQ-unsplash.jpg)no-repeat center center/cover;
+}
+

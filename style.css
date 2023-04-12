@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 16px;
+    background-color:rgba(0,0,0);
+    color:white;
+
+}
+
+/*NAVBAR*/
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0,0.25);
+    border-bottom: 0.1px solid rgba(72 46 49);
+    width:100%;
+   
+}
+
+/*nav bars and close icon*/
+
+
+
+/*nav::before{
+    content: " ";
+    position:absolute;
+    background-color:white;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+*/
+
+
+/* logo and image*/
+/*LOGO*/
+
+#logo{
+    margin: 0px 25px;
+    
+}
+
+#logo img{
+    height:70px;
+    border-radius:47%;
+    box-shadow: 1px 1px white;
+    margin: 3px 8px;
+}
+
+/*list styling*/
+
+.nav-items ul{
+    display: flex;
+    justify-content:center;
+    
+}
+
+nav ul li{
+    list-style: none;
+    font-size:1.3rem;
+
+    
+}
+
+
+
+nav ul li a{
+    text-decoration:none;
+    display:block;/* coz a is inline and and wont have top and bottom padding*/
+    color:white;
+    padding: 3px 22px;
+    text-shadow: 0.75px 0.75px 0.5px #120101;
+    font-size:1.3rem;
+    border-bottom: 2px solid transparent;
+    
+}
+
+
+
+nav ul li a:hover{
+    color:#e9ac61;
+    transition:all 0.25s ease-out;
+    border-bottom: 2px solid #e9ac61; 
+   
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color:white;
+    cursor:pointer;
+    display: none;
+    align-self: flex-end;
+}
+
+
+
+/*Section CSS*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:7px 200px;
+    position: relative;
+    
+   
+}
+/*Header */
+
+#home{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/rumman-amin-LNn6O_Mt730-unsplash.jpg) center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* The alternative version
+header{
+    height:450px;
+    position: relative;
+}
+header::before{
+    content: " ";
+    position:absolute;
+    
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity:.89;
+    
+}   
+*/
+/*Utility class*/
+.headings{
+    font-size: 2rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+
+/*section css contd*/
+
+#home h1{
+    color:white;
+    text-align: center;
+    text-shadow: 0.75px 0.75px 0.5px #120101;
+    
+}
+#home p{
+    color:white;
+    text-align: center;
+    text-shadow: 0.1px 0.75px 0.5px black;
+    font-size: 1.8rem;
+    padding-top: 24px;
+    font-family: 'Dosis', sans-serif;
+    border: 35px;
+}
+
+/*Order now button*/
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    
+    background-color: rgb(143, 112, 71);
+    opacity:0.89;
+    margin:17px;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+
+.btn a{
+    text-decoration: none;
+    color:white;
+}
+/*Our services*/
+
+#MAIN{
+    text-align: center;
+    color: white;
+    height: 60px;;
+}
+
+
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin:30px;
+    padding:3px 3px 5px 3px;
+    box-shadow: 2px 2px rgb(131 59 20);
+}
+
+
+.box p{
+    text-align: center;
+    margin: 5px;
+    font-family: 'Dosis', sans-serif;
+    color:white;  
+    text-shadow: 0.1px 0.75px 0.5px black;
+    font-size: 1.2rem;
+}
+
+/*Utility Classes*/
+
+.subh{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding:10px;
+    color:white;
+}
+
+.services-container .box img{
+    width:100%;
+    aspect-ratio: 1/0.9;
+    object-fit: cover;
+    opacity: 0.89;
+    border-radius: 20px;
+}
+
+.services-container .box #cheese{
+    width:100%;
+    aspect-ratio: 1/0.8;
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+/*Menu*/
+
+.menu-container{
+    height: 100%;
+    width:100%;
+    display: grid;
+    margin:auto;
+    grid-template-rows: 0.18fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "item-1 item-1 item-1"
+    "item-2 item-2 item-3"
+    "item-4 item-5 item-5";
+    column-gap: 0.2rem;
+    row-gap: 0.2rem;
+    color: white;
+
+}
+
+.item-1{
+    grid-area: item-1;
+    color:white;
+    text-align: center;
+}
+
+.item-2{
+    grid-area: item-2;
+   
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/ivan-torres-MQUqbmszGGM-unsplash.jpg) no-repeat center center/cover;
+}
+.item-3{
+    grid-area: item-3;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/fidel-fernando-DKWZrV0Ty14-unsplash.jpg) no-repeat center center/cover;
+    text-align: center;
+}
+.item-4{
+    grid-area: item-4;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/kai-pilger-tL92LY152Sk-unsplash.jpg)no-repeat center center/cover;
+}
+.item-5{
+    grid-area: item-5;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/aydin-ghadakchi-lamor-xzI8Xt8diMQ-unsplash.jpg)no-repeat center center/cover;
+}
+
+.item-2 ul,.item-5 ul{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Dosis', sans-serif;
+    padding: 20px;
+    text-align:center;
+    line-height:50px;
+
+  }
+
+.item-3 h1,.item-4 h1{
+    transform: translateY(90px);
+}
+
+
+/* About US*/
+
+div.about-container{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/thom-holmes-k-xKzowQRn8-unsplash.jpg) no-repeat center center/cover;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+}
+
+.about-container p{
+    text-align: center;
+    margin: 5px;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    text-shadow: 0.1px 0.75px 0.5px black;
+    font-size: 1.2rem;
+}
+
+#aboutus h1{
+    margin:10px;
+}
+/* Form Section*/
+
+.form1{
+    background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.3)), url(./imgs/firmbee-com-SpVHcbuKi6E-unsplash.jpg) no-repeat center center/cover;
+    height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    
+}
+.Contact h1{
+    margin:10px;
+}
+.form1 input,.form1 textarea{
+    width:100%;
+    padding:0.7rem;
+    border-radius:9px;
+    font-size: 1.1rem;
+    font-family: 'Dosis', sans-serif;
+    
+}
+.form1 form{
+    width:35%;
+}
+
+.form1 label{
+ font-size: 1.2rem;
+
+}
+
+.form1 input[type=submit]{
+    background-color: rgb(111 99 84);
+    margin-top: 0.8rem;
+    color: white;
+    text-shadow:2px 2px black;
+    font-size: 1.3rem;
+    border: white;
+}
+
+.form1 input[type=submit]:hover{
+      border:2px solid rgb(231, 187, 150);
+}
+
+
+/*Footer*/
+
+.f{
+    
+    display:flex;
+    
+} 
+
+.f p{
+    text-align: center;
+    margin:auto;}

@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/*Navigation*/
+
+
+header label{
+    display: initial;
+    text-align: right;
+    transform: translateY(-1.8rem);
+    font-size: 1.4rem;
+}
+
+
+header .nav-items{
+    position:absolute;
+    top:5rem;left:0;right:0;
+    z-index:1000;
+    display: none;
+    background-color: black;
+}
+
+.nav-items ul{
+    text-align: center;
+    flex-direction: column;
+}
+
+
+/* Went wrong targeting ul instead od iv ul is in coz then menu was not at right but sort of had margin right which we wanted to remove coz probably nav had flex on space between so there was space left after menu even though ul was down there must be div space so...
+.nav-items ul{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    background-color: red;
+    position: absolute;
+    left:0;
+    right:0;
+    display: none;
+    width:100%;
+    z-index: 1000;
+    top:5rem;
+}
+*/
+nav ul li{
+    border: 1.5px solid #ef8b8b;
+    padding-bottom:10px;
+
+}
+
+#menu-bar:checked ~ .nav-items{
+    display: initial;
+}
+
+/*Home Section*/
+
+#home{
+    padding:0;
+}
+/*Services Section*/
+
+#services{
+    flex-direction: column;
+    
+}
+.subh{
+    font-size: 1.545rem;
+}
+#services p{
+    font-size: 1.45rem;
+}
+
+
+
+
+
+/*MENU CSS GRID*/
+
+.menu-container{
+    height: 100%;
+    width:100%;
+    display: grid;
+    margin:auto;
+    grid-template-rows: 0.18fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "item-1"
+    "item-2"
+    "item-3"
+    "item-4"
+    "item-5";
+    column-gap: 0.2rem;
+    row-gap: 0.2rem;
+    color: white;
+    
+}
+
+
+
+.item-1{
+    grid-area: item-1;
+    color:white;
+    text-align: center;
+    
+    overflow-x: auto;
+}
+
+
+.item-2{
+    grid-area: item-2;
+   
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/ivan-torres-MQUqbmszGGM-unsplash.jpg) no-repeat center center/cover;
+    overflow-x: auto;
+}
+
+.item-3{
+    grid-area: item-3;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/fidel-fernando-DKWZrV0Ty14-unsplash.jpg) no-repeat center center/cover;
+    text-align: center;
+    
+    overflow-x: auto;
+
+}
+.item-4{
+    grid-area: item-4;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/kai-pilger-tL92LY152Sk-unsplash.jpg)no-repeat center center/cover;
+    
+    overflow-x: auto;
+
+}
+.item-5{
+    grid-area: item-5;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./imgs/aydin-ghadakchi-lamor-xzI8Xt8diMQ-unsplash.jpg)no-repeat center center/cover;
+    
+    overflow-x: auto;
+
+}
+
+.item-2 ul,.item-5 ul{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Dosis', sans-serif;
+    /*padding: 20px;*/
+    text-align:center;
+    line-height:50px;
+    
+   
+
+  }
+
+.item-3 h1,.item-4 h1{
+    transform: translateY(90px);
+}
+
+/*About us*/
+
+div.about-container{
+    
+    height:100vh;
+    font-size: 1.1rem;
+}
+
+
+/*COntact US*/
+
+.form1 input,.form1 textarea{
+    text-overflow: ellipsis;
+}
+
+.form1 form{
+    width:50%;
+}
